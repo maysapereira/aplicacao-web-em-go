@@ -29,18 +29,14 @@
             </tr>
         </thead>
         <tbody>
+            {{range .}}
             <tr>
-                <td>Mangá "Tomie" by Junji Ito</td>
-                <td>Número de páginas: 376; Idioma: Português; Editora: Pipoca e Nanquim; Data da publicação: 10/10/2021</td>
-                <td>97,86</td>
-                <td>10</td>
+                <td>{{.Nome}}</td>
+                <td>{{.Descricao}}</td>
+                <td>{{.Preco}}</td>
+                <td>{{.Quantidade}}</td>
             </tr>
-            <tr>
-                <td>Mangá "Uzumaki" by Junji Ito</td>
-                <td>Número de páginas: 668; Idioma: Português; Editora: Pipoca e Nanquim; Data da publicação: 29/04/2020</td>
-                <td>146,59</td>
-                <td>10</td>
-            </tr>
+            {{end}}
         </tbody>
     </table>
     
